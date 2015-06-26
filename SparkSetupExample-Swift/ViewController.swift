@@ -58,7 +58,7 @@ class ViewController: UIViewController, SparkSetupMainControllerDelegate {
         c.appName = "Acme Setup"
 //        c.deviceImage = UIImage(named: "anvil")
         c.deviceName = "Connected Anvil"
-        c.instructionalVideoFilename = "rr.mp4"
+        //c.instructionalVideoFilename = "rr.mp4"
 
         c.normalTextFontName = "Skater Girls Rock"
         c.boldTextFontName = "CheriLiney"
@@ -68,7 +68,7 @@ class ViewController: UIViewController, SparkSetupMainControllerDelegate {
     @IBAction func startButtonTapped(sender: UIButton)
     {
         // Comment out this line to revert to default "Unbranded" Spark Setup app
-//        self.customizeSetup()
+        self.customizeSetup()
         
         // lines required for invoking the Spark Setup wizard
         if let vc = SparkSetupMainController()
